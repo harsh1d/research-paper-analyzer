@@ -11,3 +11,8 @@ yake==0.4.8
 spacy==3.8.2
 pdfplumber==0.11.4
 aiofiles==24.1.0
+fastapi==0.115.0
+python-multipart==0.0.12
+PyPDF2==3.0.1
+python-docx==1.1.0
+pydantic==2.9.2
