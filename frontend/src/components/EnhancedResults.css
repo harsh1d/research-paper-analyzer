@@ -1,0 +1,360 @@
+/**
+ * Enhanced Results Styles
+ */
+
+/* Dark Mode for Enhanced Results */
+.dark-mode .quality-banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+}
+
+.dark-mode .summary-card {
+    background: rgba(102, 126, 234, 0.1);
+    border-left-color: #667eea;
+}
+
+.dark-mode .readability-card {
+    background: rgba(237, 137, 54, 0.1);
+    border-left-color: #ed8936;
+}
+
+.dark-mode .citations-card {
+    background: rgba(72, 187, 120, 0.1);
+    border-left-color: #48bb78;
+}
+
+.dark-mode .questions-card {
+    background: rgba(246, 173, 85, 0.1);
+    border-left-color: #f6ad55;
+}
+
+.dark-mode .findings-list li,
+.dark-mode .questions-list li,
+.dark-mode .citation-stat-box,
+.dark-mode .author-item,
+.dark-mode .read-stat {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+}
+
+.dark-mode .summary-text,
+.dark-mode .read-label,
+.dark-mode .author-name {
+    color: var(--text-primary);
+}
+
+.enhanced-results {
+    margin-bottom: 2rem;
+}
+
+/* Quality Score Banner */
+.quality-banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+}
+
+.quality-score-circle {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+}
+
+.score-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.score-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.quality-details {
+    flex: 1;
+}
+
+.quality-details h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.component-scores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.mini-score {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.score-name {
+    font-size: 0.85rem;
+    width: 80px;
+    text-transform: capitalize;
+}
+
+.mini-bar {
+    flex: 1;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.mini-fill {
+    height: 100%;
+    background: white;
+    transition: width 0.5s ease;
+}
+
+.score-num {
+    font-size: 0.85rem;
+    font-weight: 600;
+    width: 35px;
+    text-align: right;
+}
+
+/* Summary Card */
+.summary-card {
+    background: linear-gradient(135deg, #f6f8ff 0%, #f0f4ff 100%);
+    border-left: 4px solid #667eea;
+}
+
+.summary-section {
+    margin-bottom: 1.5rem;
+}
+
+.summary-label {
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.summary-text {
+    color: #2d3748;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.findings-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.findings-list li {
+    padding: 0.75rem;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+    font-size: 0.9rem;
+    border-left: 3px solid #667eea;
+    padding-left: 1rem;
+}
+
+/* Readability Card */
+.readability-card {
+    background: linear-gradient(135deg, #fff5f0 0%, #fff0e6 100%);
+    border-left: 4px solid #ed8936;
+}
+
+.readability-score-main {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(237, 137, 54, 0.2);
+}
+
+.read-score-circle {
+    background: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ed8936;
+    box-shadow: 0 4px 12px rgba(237, 137, 54, 0.2);
+}
+
+.read-interpretation {
+    flex: 1;
+}
+
+.read-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.3rem;
+}
+
+.read-level {
+    color: #718096;
+    font-size: 0.95rem;
+}
+
+.readability-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.read-stat {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-label {
+    display: block;
+    color: #718096;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-value {
+    display: block;
+    color: #2d3748;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Citations Card */
+.citations-card {
+    background: linear-gradient(135deg, #f0fff4 0%, #e6fffa 100%);
+    border-left: 4px solid #48bb78;
+}
+
+.citations-summary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.citation-stat-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #48bb78;
+    margin-bottom: 0.3rem;
+}
+
+.stat-text {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.subsection-title {
+    color: #2d3748;
+    font-size: 1rem;
+    margin: 1.5rem 0 1rem 0;
+    font-weight: 600;
+}
+
+.authors-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.author-item {
+    background: white;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author-name {
+    color: #2d3748;
+    font-weight: 500;
+}
+
+.author-count {
+    color: #48bb78;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Research Questions Card */
+.questions-card {
+    background: linear-gradient(135deg, #fef5e7 0%, #fff9e6 100%);
+    border-left: 4px solid #f6ad55;
+}
+
+.questions-section {
+    margin-bottom: 1.5rem;
+}
+
+.questions-section h4 {
+    color: #2d3748;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.questions-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.questions-list li {
+    padding: 0.75rem 1rem;
+    background: white;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+    font-size: 0.9rem;
+    border-left: 3px solid #f6ad55;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quality-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .component-scores {
+        grid-template-columns: 1fr;
+    }
+
+    .readability-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .citations-summary {
+        grid-template-columns: 1fr;
+    }
+}
