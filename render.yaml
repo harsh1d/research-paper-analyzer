@@ -1,16 +1,15 @@
 services:
-  # Backend API
   - type: web
-    name: research-paper-analyzer-api
+    name: research-paper-analyzer
     runtime: python
     plan: free
     buildCommand: |
+      pip install --upgrade pip
       cd backend
       pip install -r requirements.txt
       python -m spacy download en_core_web_sm
     startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: PYTHON_VERSION
-        value: 3.11.0
+        value: "3.11"
     healthCheckPath: /health
-
